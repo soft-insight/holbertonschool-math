@@ -9,13 +9,12 @@
 
 int main(void)
 {
- complex c1;
+	complex c1;
+    double arg;
 
     c1.re = 1;
     c1.im = 2;
-    display_complex_number(c1);
-    c1.re = 1;
-    c1.im = 0;
-    display_complex_number(c1);
+    arg = argument(c1);
+    printf("%f\n", arg);
     return (0);
 }
